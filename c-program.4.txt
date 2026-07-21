@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main(){
+    int day;
+    scanf("%d",&day);
+    switch(day){
+        case 1:
+            printf("sunday\nholiday");
+            break;
+        case 2:
+            printf("monday\nweekday");
+            break;
+        case 3:
+            printf("tuesday\nweekday");
+            break;
+        case 4:
+            printf("wednesday\nweekday");
+            break;
+        case 5:
+           printf("thuresday\nweekday");
+           break;
+        case 6:
+            printf("friday\nweekday");
+            break;
+        case 7:
+            printf("saterday\nholiday");
+        break;
+            
+    }
+    return 0;
+}
