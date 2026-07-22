@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main(){
+    int pen,notebook,pencil;
+    scanf("%d %d %d",&pen,&notebook,&pencil);
+    int total = (pen*20)+(pencil*9)+(notebook*70);
+    printf("total :%d",total);
+}
