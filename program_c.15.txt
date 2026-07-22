@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main(){
+    int total_chocolates = 20;
+    int consumption,planned;
+    scanf("%d %d",&consumption,&planned);
+    printf("enter consumption per day and planned days:");
+    int choo = consumption*planned;
+    if(total_chocolates>=choo){
+        printf("1");
+    }
+    else{
+        printf("0");
+    }
+    return 0;
+}
