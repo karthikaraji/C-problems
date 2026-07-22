@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int age;
+    float ticket_price;
+
+    scanf("%d", &age);
+
+    if(age <= 12) {
+        ticket_price = 50.0;
+    }
+    else if(age <= 18) {
+        ticket_price = 80.0;
+    }
+    else if(age <= 60) {
+        ticket_price = 120.0;
+    }
+    else {
+        ticket_price = 70.0;
+    }
+
+    printf("The ticket price is: %.2f\n", ticket_price);
+
+    return 0;
+}
