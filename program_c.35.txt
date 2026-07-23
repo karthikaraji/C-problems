@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main(){
+    int miles,gallons;
+    scanf("%d %d",&miles,&gallons);
+    int MPG;
+    MPG = miles/gallons;
+    if(MPG<15){
+        printf("poor");
+    }
+    else if(MPG>=15 && MPG<=24){
+        printf("average");
+    }
+    else if(MPG>=25 && MPG<=34){
+        printf("good");
+    }
+    else{
+        printf("excellent");
+    }
+}
