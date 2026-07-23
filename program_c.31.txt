@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main(){
+    int a;
+    scanf("%d",&a);
+    if(a<150){
+        printf("short");
+    }
+    else if(a>=150 && a<=170){
+        printf("average");
+    }
+    else if(a>=170 && a<=185){
+        printf("tall");
+    }
+    else{
+        printf("very tall");
+    }
+}

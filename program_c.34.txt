@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main(){
+    int saree,watch,cosmetics,total;
+    scanf("%d %d %d",&saree,&watch,&cosmetics);
+    total = saree+watch+cosmetics;
+    float discount,finalamount;
+    if(total>3000){
+        discount = total*0.20;
+        finalamount = total - discount;
+        printf("%f",finalamount);
+    }
+    else{
+        printf("%d",total);
+    }
+    return 0;
+}
