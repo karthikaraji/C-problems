@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    float hours_worked, hourly_rate, total_salary;
+    const float regular_hours = 40.0;
+    printf("Enter the number of hours worked: ");
+    scanf("%f", &hours_worked);
+    printf("Enter your hourly rate: ");
+    scanf("%f", &hourly_rate);
+    if (hours_worked <= regular_hours) {
+        total_salary = hours_worked * hourly_rate;
+    } else {
+        float overtime_hours = hours_worked - regular_hours;
+        float regular_pay = regular_hours * hourly_rate;
+        float overtime_pay = overtime_hours * (hourly_rate * 1.5);
+        total_salary = regular_pay + overtime_pay;
+    }
+    printf("Total salary: $%.2f\n", total_salary);
+
+    return 0;
+}
