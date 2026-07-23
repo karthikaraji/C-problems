@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <math.h>
+int main(){
+    float p, r, t, total, CI;
+    scanf("%f %f %f", &p, &r, &t);
+    total = p * pow((1 + r), t);
+    CI = total - p;
+    printf("%.2f", CI);
+
+    return 0;
+}
