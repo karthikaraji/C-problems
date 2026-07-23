@@ -1,0 +1,8 @@
+#include <stdio.h>
+int main(){
+    int decimal;
+    printf("enter the decimal number :");
+    scanf("%d",&decimal);
+    printf("octal :%o\n",decimal);
+    printf("hexcadecimal :%x\n",decimal);
+}
