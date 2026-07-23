@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main(){
+    int inves,purchase,current;
+    scanf("%d %d %d",&inves,&purchase,&current);
+    if(purchase<current){
+        printf("profit");
+    }
+    else if(purchase>current){
+        printf("loss");
+    }
+    else{
+        printf("no");
+    }
+}
